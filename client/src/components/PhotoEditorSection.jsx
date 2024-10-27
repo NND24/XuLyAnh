@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const PhotoEditorSection = () => {
   return (
     <section
@@ -35,22 +37,28 @@ const PhotoEditorSection = () => {
             tượng của bạn!
           </p>
           <div className='flex items-center content-center justify-center mt-[60px] gap-[30px]'>
-            <div className='bg-[#00000038] border-[#965cc957] border-[2px] text-[#ffffffcc] text-[17px] font-normal h-[55px] px-[40px] rounded-[50px] flex items-center gap-2'>
+            <Link
+              to='/create/editor'
+              className='bg-[#00000038] border-[#965cc957] border-[2px] text-[#ffffffcc] text-[17px] font-normal h-[55px] px-[40px] rounded-[50px] flex items-center gap-2'
+            >
               <img
                 className='opacity-80 w-[24px] h-[24px]'
                 src='https://pixlr.com/images/index/image-editor.svg'
                 alt=''
               />
               <span>Chỉnh sửa ảnh AI mở</span>
-            </div>
-            <div className='bg-[#00000038] border-[#965cc957] border-[2px] text-[#ffffffcc] text-[17px] font-normal h-[55px] px-[40px] rounded-[50px] flex items-center gap-2'>
+            </Link>
+            <Link
+              to='/create/editor'
+              className='bg-[#00000038] border-[#965cc957] border-[2px] text-[#ffffffcc] text-[17px] font-normal h-[55px] px-[40px] rounded-[50px] flex items-center gap-2'
+            >
               <img
                 className='opacity-80 w-[24px] h-[24px]'
                 src='https://pixlr.com/images/index/image-generator.svg'
                 alt=''
               />
               <span>Chỉnh sửa ảnh AI mở</span>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

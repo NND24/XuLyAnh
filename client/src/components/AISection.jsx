@@ -1,3 +1,9 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Navigation } from "swiper/modules";
+
 const AISection = () => {
   return (
     <section className='bg-[#0a0f20] flex flex-col gap-[125px] py-[180px]'>
@@ -130,7 +136,7 @@ const AISection = () => {
             <img
               src='https://pixlr.com/images/index/generative-expand-back.webp'
               alt=''
-              className='max-w-[300px] translate-x-[-60%] group-hover:translate-x-[-80%] w-[45%] group-hover:w-[50%] z-2 h-auto absolute rounded-[25px]'
+              className='scale-[0.7] group-hover:scale-[1] w-[100%] z-2 h-auto absolute rounded-[25px]'
               style={{
                 transition: "all .2s ease-in-out",
               }}
@@ -138,7 +144,7 @@ const AISection = () => {
             <img
               src='https://pixlr.com/images/index/generative-expand-front.webp'
               alt=''
-              className='max-w-[350px] w-[60%] z-3 h-auto absolute rounded-[25px]'
+              className='w-[41.666666%] z-3 h-auto absolute rounded-[25px]'
               style={{
                 boxShadow: "0 8px 24px rgba(17,17,26,.1),0 16px 56px rgba(17,17,26,.1),0 24px 80px rgba(17,17,26,.1)",
                 transition: "all .2s ease-in-out",
@@ -146,6 +152,132 @@ const AISection = () => {
             />
           </div>
         </div>
+      </div>
+
+      <div className='flex flex-col gap-[40px] mx-auto w-[90%] relative'>
+        <span className='text-[#7286ff] text-[.875rem] text-left tracking-[4px] leading-[1.4] font-semibold'>
+          Nghệ thuật không giới hạn
+        </span>
+        <h2 className='text-[#ffffffee] text-[2em] font-black'>Khác TUYỆT VỜI Công cụ Sáng tạo AI!</h2>
+
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={25}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          navigation={true}
+          modules={[Autoplay, Navigation]}
+          className='inf-slider'
+        >
+          <SwiperSlide
+            className='relative  p-[20px] cursor-pointer rounded-[20px] !overflow-hidden'
+            style={{
+              background: "linear-gradient(135deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0))",
+              backgroundPosition: "50% 50%",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "200% 200%",
+            }}
+          >
+            <img
+              src='https://pixlr.com/img/tool/remove-object-info.webp'
+              className='object-cover  h-auto w-full rounded-[18px]'
+              alt=''
+            />
+            <h3 className='text-[#ffffffee] text-[1.1rem] font-semibold mt-[20px] text-left'>Xóa Đối tượng AI</h3>
+            <p className='text-[#ffffffb3] mt-[5px] text-left'>
+              Xóa Đối tượng bất kỳ không mong muốn từ ảnh của bạn chỉ bằng cách vẽ một đường xung quanh nó.
+            </p>
+            <br />
+            <br />
+          </SwiperSlide>
+          <SwiperSlide
+            className='relative  p-[20px] cursor-pointer rounded-[20px] !overflow-hidden'
+            style={{
+              background: "linear-gradient(135deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0))",
+              backgroundPosition: "50% 50%",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "200% 200%",
+            }}
+          >
+            <img
+              src='https://pixlr.com/img/tool/remove-object-info.webp'
+              className='object-cover  h-auto w-full rounded-[18px]'
+              alt=''
+            />
+            <h3 className='text-[#ffffffee] text-[1.1rem] font-semibold mt-[20px] text-left'>Xóa Đối tượng AI</h3>
+            <p className='text-[#ffffffb3] mt-[5px] text-left'>
+              Xóa Đối tượng bất kỳ không mong muốn từ ảnh của bạn chỉ bằng cách vẽ một đường xung quanh nó.
+            </p>
+            <br />
+            <br />
+          </SwiperSlide>
+          <SwiperSlide
+            className='relative  p-[20px] cursor-pointer rounded-[20px] !overflow-hidden'
+            style={{
+              background: "linear-gradient(135deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0))",
+              backgroundPosition: "50% 50%",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "200% 200%",
+            }}
+          >
+            <img
+              src='https://pixlr.com/img/tool/remove-object-info.webp'
+              className='object-cover  h-auto w-full rounded-[18px]'
+              alt=''
+            />
+            <h3 className='text-[#ffffffee] text-[1.1rem] font-semibold mt-[20px] text-left'>Xóa Đối tượng AI</h3>
+            <p className='text-[#ffffffb3] mt-[5px] text-left'>
+              Xóa Đối tượng bất kỳ không mong muốn từ ảnh của bạn chỉ bằng cách vẽ một đường xung quanh nó.
+            </p>
+            <br />
+            <br />
+          </SwiperSlide>
+          <SwiperSlide
+            className='relative  p-[20px] cursor-pointer rounded-[20px] !overflow-hidden'
+            style={{
+              background: "linear-gradient(135deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0))",
+              backgroundPosition: "50% 50%",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "200% 200%",
+            }}
+          >
+            <img
+              src='https://pixlr.com/img/tool/remove-object-info.webp'
+              className='object-cover  h-auto w-full rounded-[18px]'
+              alt=''
+            />
+            <h3 className='text-[#ffffffee] text-[1.1rem] font-semibold mt-[20px] text-left'>Xóa Đối tượng AI</h3>
+            <p className='text-[#ffffffb3] mt-[5px] text-left'>
+              Xóa Đối tượng bất kỳ không mong muốn từ ảnh của bạn chỉ bằng cách vẽ một đường xung quanh nó.
+            </p>
+            <br />
+            <br />
+          </SwiperSlide>
+          <SwiperSlide
+            className='relative  p-[20px] cursor-pointer rounded-[20px] !overflow-hidden'
+            style={{
+              background: "linear-gradient(135deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0))",
+              backgroundPosition: "50% 50%",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "200% 200%",
+            }}
+          >
+            <img
+              src='https://pixlr.com/img/tool/remove-object-info.webp'
+              className='object-cover  h-auto w-full rounded-[18px]'
+              alt=''
+            />
+            <h3 className='text-[#ffffffee] text-[1.1rem] font-semibold mt-[20px] text-left'>Xóa Đối tượng AI</h3>
+            <p className='text-[#ffffffb3] mt-[5px] text-left'>
+              Xóa Đối tượng bất kỳ không mong muốn từ ảnh của bạn chỉ bằng cách vẽ một đường xung quanh nó.
+            </p>
+            <br />
+            <br />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </section>
   );
